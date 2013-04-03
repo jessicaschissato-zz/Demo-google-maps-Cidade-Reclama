@@ -1,0 +1,6 @@
+fieldset { border: 0; padding: 0 }
+legend { display: none }
+fieldset div { margin-bottom: 15px }
+input#endereco { width: 70% }
+
+#mapa { height: 430px; width: 100% }

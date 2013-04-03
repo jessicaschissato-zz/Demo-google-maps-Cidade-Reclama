@@ -1,0 +1,50 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>GDG Open Sampa - Demo</title>
+        <link type="text/css" rel="stylesheet" href="lib/estilo.css" />
+        <script src="lib/jquery.js"></script>
+        <script src="lib/jquery-ui/js/jquery-ui-1.10.2.custom.min.js"></script>
+        <link type="text/css" rel="stylesheet" href="lib/jquery-ui/css/ui-lightness/jquery-ui-1.10.2.custom.css" />
+        <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="lib/reclamar.js"></script>
+        <script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-4361956-23']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+    </head>
+    
+    <body>
+    	<h2>Cidade Reclama - Google Maps ajudando a cidadania - DEMO</h2>
+    	<h1>Reclamar</h1>
+        
+        <form method="post" action="index.html">
+            <fieldset>
+                <legend>Reclamar</legend>
+                
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" />
+                    <input type="button" name="mostrar" id="mostrar" value="Mostrar no mapa" />
+                </div>
+                
+                <div id="mapa"></div>
+                
+                <div>        
+                    <input type="hidden" id="latitude" name="latitude" />
+                    <input type="hidden" id="longitude" name="longitude" />
+                    <input type="submit" name="reclamar" id="reclamar" value="Reclamar" />
+                </div>
+            </fieldset>
+        </form>
+        
+    </body>
+</html>
